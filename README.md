@@ -1,3 +1,3 @@
-<img src=".github/assets/hero.png" alt="rollinia logo" style="display:flex;width:200px;margin-inline:auto" align="center" />
+<p align="center"><img src=".github/assets/hero.png" alt="rollinia logo" style="display:flex;width:200px;margin-inline:auto" /></p>
 
-Angular toolkit
+Angular toolkit: ui, utils, store

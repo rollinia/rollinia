@@ -1,5 +1,6 @@
 {
   "name": "@rollinia/source",
+  "description": "Angular toolkit: ui, utils, store",
   "version": "0.0.1",
   "license": "MIT",
   "author": {
