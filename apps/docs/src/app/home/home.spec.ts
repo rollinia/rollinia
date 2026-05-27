@@ -9,7 +9,7 @@ describe('Home', () => {
     const fixture = TestBed.createComponent(Home);
     await fixture.whenStable();
     expect(fixture.nativeElement.querySelector('h1')?.textContent).toContain(
-      'rollinia',
+      'home',
     );
   });
 });
