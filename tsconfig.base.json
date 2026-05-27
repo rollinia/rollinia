@@ -26,6 +26,8 @@
     "sourceMap": true,
     "verbatimModuleSyntax": true,
     "customConditions": ["@rollinia/source"],
-    "paths": {}
+    "paths": {
+      "@rollinia/ui": ["./libs/ui/src/index.ts"]
+    }
   }
 }
