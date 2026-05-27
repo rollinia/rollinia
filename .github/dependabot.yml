@@ -1,0 +1,21 @@
+version: 2
+updates:
+  # Bun doesn't have native Dependabot support — "npm" ecosystem reads package.json + bun.lock.
+  # Merge PRs from Dependabot → run `bun i` locally to sync bun.lock.
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    groups:
+      # Groups all Angular packages into a single PR instead of one PR per package.
+      angular:
+        patterns: ['@angular*', '@angular-devkit*', '@schematics*']
+      # Groups all Nx packages into a single PR.
+      nx:
+        patterns: ['@nx*', 'nx']
+
+  # Keeps GitHub Actions (actions/checkout, oven-sh/setup-bun, etc.) up to date.
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
