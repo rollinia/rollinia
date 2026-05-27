@@ -29,12 +29,14 @@ node_modules
 Thumbs.db
 
 # misc
+__screenshots__/
+.angular
 .env
 .nx/cache
 .nx/workspace-data
 .claude/worktrees
 .claude/settings.local.json
-/.sass-cache
+.wrangler
 /connect.lock
 /coverage
 /libpeerconnection.log

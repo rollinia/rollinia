@@ -1,0 +1,10 @@
+name = "rollinia"
+main = "dist/apps/docs/server/server.mjs"
+compatibility_date = "2026-05-27"
+compatibility_flags = ["nodejs_compat"]
+
+[define]
+"import.meta.url" = '"file:///index.js"'
+
+[assets]
+directory = "dist/apps/docs/browser"
