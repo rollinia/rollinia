@@ -2,5 +2,8 @@
   "arrowParens": "avoid",
   "endOfLine": "lf",
   "singleQuote": true,
-  "trailingComma": "all"
+  "trailingComma": "all",
+  "htmlWhitespaceSensitivity": "ignore",
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindFunctions": ["vx"]
 }
