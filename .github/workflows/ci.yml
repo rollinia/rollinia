@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [dev]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun i --frozen-lockfile
+
+      - name: Lint
+        run: bunx nx affected --target=lint --base=origin/dev --head=HEAD
+
+      - name: Test
+        run: bunx nx affected --target=test --base=origin/dev --head=HEAD
+
+      - name: Build
+        run: bunx nx affected --target=build --base=origin/dev --head=HEAD
