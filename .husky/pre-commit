@@ -1,4 +1,4 @@
-bunx nx format
+bunx nx format:write --all
 bunx nx run-many -t lint --fix
 bunx nx run-many -t test build
 git add -u

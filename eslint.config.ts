@@ -27,7 +27,10 @@ export default [
         {
           enforceBuildableLibDependency: true,
           allow: ['^.*/eslint(\\.base)?\\.config(\\.ts)?$'],
-          depConstraints: [{ sourceTag: '*', onlyDependOnLibsWithTags: ['*'] }],
+          depConstraints: [
+            { sourceTag: 'type:app', onlyDependOnLibsWithTags: ['type:lib'] },
+            { sourceTag: 'type:lib', onlyDependOnLibsWithTags: ['type:lib'] },
+          ],
         },
       ],
       '@typescript-eslint/consistent-type-imports': [
