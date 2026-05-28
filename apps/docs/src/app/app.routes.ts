@@ -10,7 +10,7 @@ export const appRoutes: Routes = [
     children: [
       {
         path: 'button',
-        loadComponent: () => import('./components/button/button.page'),
+        loadComponent: () => import('./docs/button/button.doc'),
       },
       { path: '**', redirectTo: '' },
     ],
