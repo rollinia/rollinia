@@ -68,7 +68,7 @@
     "jsonc-eslint-parser": "^2.1.0",
     "ng-packagr": "~21.2.0",
     "nx": "22.7.4",
-    "postcss": "8.5.15",
+    "postcss": "8.5.23",
     "prettier": "4.0.0-alpha.13",
     "prettier-plugin-tailwindcss": "0.8.0",
     "tailwindcss": "4.3.0",
