@@ -67,7 +67,7 @@
     "husky": "9.1.7",
     "jsonc-eslint-parser": "^2.1.0",
     "ng-packagr": "~21.2.0",
-    "nx": "22.7.4",
+    "nx": "22.7.7",
     "postcss": "8.5.15",
     "prettier": "4.0.0-alpha.13",
     "prettier-plugin-tailwindcss": "0.8.0",
